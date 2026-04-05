@@ -3,53 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swipely — Privacy Policy</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #1a1a2e; line-height: 1.7; }
-  h1 { color: #0f0a1e; }
-  h2 { color: #4a3f6b; margin-top: 28px; }
-  .date { color: #888; font-size: 14px; }
-</style>
+<title>Swipely Privacy Policy</title>
+<style>body{font-family:system-ui,sans-serif;max-width:700px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333}h1{font-size:24px}h2{font-size:18px;margin-top:28px}p{margin:8px 0}</style>
 </head>
 <body>
-<div style="text-align:right;margin-bottom:20px"><a href="index.html" style="color:#4a3f6b;text-decoration:none;font-weight:600">🇭🇷 Hrvatski</a></div>
 <h1>Swipely — Privacy Policy</h1>
-<p class="date">Last updated: March 25, 2026</p>
+<p>Last updated: April 5, 2026</p>
 
-<h2>1. What data we collect</h2>
-<p>Swipely only collects data necessary for the app to function:</p>
+<h2>1. Data We Collect</h2>
+<p>Swipely collects only data necessary for app operation:</p>
 <ul>
-  <li><strong>Email address</strong> — for authentication and login.</li>
-  <li><strong>Flashcard and folder data</strong> — your study content, stored on your device and optionally synced via Supabase servers.</li>
-  <li><strong>Study statistics</strong> — number of reviewed cards, streak, and activity (stored locally and optionally in the cloud).</li>
+<li>Email address for authentication (via email/password or Google Sign-In)</li>
+<li>Flashcard and folder data stored on your device with optional cloud sync</li>
+<li>Learning statistics (card views, study streaks, quiz results)</li>
+<li>Subscription status for plan management</li>
 </ul>
 
-<h2>2. AI data processing</h2>
-<p>When you use AI features (card generation, explanations, quizzes), the text of your cards is sent to Google Gemini AI service through our secure server. Swipely does not store or forward this data to any other third parties.</p>
+<h2>2. AI Data Processing</h2>
+<p>When using AI features (card generation, explanations, quizzes), your study material text is sent to Google Gemini API for processing. This data is not stored by Swipely beyond the immediate request. Google's AI services may process data according to their own privacy policies.</p>
 
-<h2>3. Data storage</h2>
-<p>All data is primarily stored locally on your device. It can optionally be synced with Supabase cloud service for backup and multi-device access. Data is protected by Row Level Security (RLS) — each user can only access their own data.</p>
+<h2>3. Data Storage</h2>
+<p>Data is primarily stored locally on your device using AsyncStorage. Optional cloud sync via Supabase uses Row Level Security — each user can only access their own data. Cloud data is stored on Supabase servers in the EU.</p>
 
-<h2>4. Data sharing</h2>
-<p>Swipely does not sell, rent, or share your personal data with third parties, except:</p>
+<h2>4. Third-Party Services</h2>
+<p>Swipely uses the following third-party services:</p>
 <ul>
-  <li>AI services (Google Gemini) — only when you actively use AI features.</li>
-  <li>Supabase — for authentication and optional data sync.</li>
+<li><strong>Supabase</strong> — authentication and optional cloud sync</li>
+<li><strong>Google Gemini API</strong> — AI-powered card generation and explanations</li>
+<li><strong>Google Sign-In</strong> — optional social login</li>
+<li><strong>RevenueCat</strong> — subscription and payment management</li>
+<li><strong>Google Play Billing</strong> — in-app purchases</li>
 </ul>
 
-<h2>5. Sharing flashcard sets</h2>
-<p>When you share a flashcard set via a code, the card content becomes available to anyone with that code. Do not share sensitive data through this feature.</p>
+<h2>5. Data Sharing</h2>
+<p>We do not sell, rent, or share your personal data with third parties. Data is only sent to the services listed above for their specific purpose (authentication, AI processing, payments).</p>
 
-<h2>6. Data deletion</h2>
-<p>You can delete all your data by logging out and uninstalling the app. To delete cloud data, contact us at the email below or visit our <a href="delete-en.html">account deletion page</a>.</p>
+<h2>6. Sharing Flashcard Sets</h2>
+<p>When you share a flashcard set via a share code, the content becomes accessible to anyone with that code. Share codes do not include personal information.</p>
 
-<h2>7. Children</h2>
-<p>Swipely is not intended for children under 13. We do not knowingly collect data from children.</p>
+<h2>7. In-App Purchases</h2>
+<p>Swipely offers optional subscription plans (Pro and Premium) managed through Google Play. Payment information is handled entirely by Google Play — Swipely does not collect or store payment details.</p>
 
-<h2>8. Changes</h2>
-<p>We reserve the right to modify this policy. Changes take effect upon publication on this page.</p>
+<h2>8. Data Deletion</h2>
+<p>You can delete your account and all associated data by contacting us at devbynarda@gmail.com. Local data can be deleted by uninstalling the app.</p>
 
-<h2>9. Contact</h2>
-<p>For privacy questions: <strong>leonarda.hunski@gmail.com</strong></p>
+<h2>9. Children's Privacy</h2>
+<p>Swipely is not intended for children under 13. We do not knowingly collect data from children under 13.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+<h2>11. Contact</h2>
+<p>For questions about this privacy policy, contact us at: <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a></p>
 </body>
 </html>
