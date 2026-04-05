@@ -3,56 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swipely — Pravila privatnosti</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #1a1a2e; line-height: 1.7; }
-  h1 { color: #0f0a1e; }
-  h2 { color: #4a3f6b; margin-top: 28px; }
-  .date { color: #888; font-size: 14px; }
-</style>
+<title>Swipely Pravila privatnosti</title>
+<style>body{font-family:system-ui,sans-serif;max-width:700px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333}h1{font-size:24px}h2{font-size:18px;margin-top:28px}p{margin:8px 0}</style>
 </head>
 <body>
-<div style="text-align:right;margin-bottom:20px"><a href="index-en.html" style="color:#4a3f6b;text-decoration:none;font-weight:600">🇬🇧 English</a></div>
 <h1>Swipely — Pravila privatnosti</h1>
-<p class="date">Zadnje ažuriranje: 18. ožujka 2026.</p>
+<p>Zadnje ažurirano: 5. travnja 2026.</p>
 
 <h2>1. Koje podatke prikupljamo</h2>
 <p>Swipely prikuplja samo podatke potrebne za rad aplikacije:</p>
 <ul>
-  <li><strong>Email adresa</strong> — za autentifikaciju i prijavu u aplikaciju.</li>
-  <li><strong>Podaci o karticama i folderima</strong> — vaš sadržaj za učenje, pohranjen na vašem uređaju i opcijski sinkroniziran putem Supabase servera.</li>
-  <li><strong>Statistika učenja</strong> — broj pregledanih kartica, streak i aktivnost (pohranjeni lokalno i opcijski u oblaku).</li>
+<li>Email adresu za autentifikaciju (putem email/lozinka ili Google prijave)</li>
+<li>Podatke o karticama i mapama, pohranjene na vašem uređaju s opcionalnom sinkronizacijom u oblaku</li>
+<li>Statistiku učenja (pregledi kartica, nizovi učenja, rezultati kvizova)</li>
+<li>Status pretplate za upravljanje planovima</li>
 </ul>
 
 <h2>2. AI obrada podataka</h2>
-<p>Kada koristite AI funkcionalnosti (generiranje kartica, objašnjenja, kviz), tekst vaših kartica šalje se odabranom AI davatelju (Google Gemini ili Anthropic Claude) putem vašeg osobnog API ključa. Swipely ne pohranjuje niti prosljeđuje te podatke trećim stranama izvan navedenih AI servisa.</p>
+<p>Prilikom korištenja AI značajki (generiranje kartica, objašnjenja, kvizovi), tekst vašeg materijala šalje se Google Gemini API-ju na obradu. Swipely ne pohranjuje te podatke nakon obrade. Google AI servisi mogu obrađivati podatke prema vlastitim pravilima privatnosti.</p>
 
-<h2>3. API ključevi</h2>
-<p>Vaši API ključevi za AI servise čuvaju se isključivo na vašem uređaju (AsyncStorage) i šalju se direktno odabranom AI serveru. Swipely nema pristup vašim ključevima.</p>
+<h2>3. Pohrana podataka</h2>
+<p>Podaci se primarno pohranjuju lokalno na vašem uređaju. Opcionalna sinkronizacija u oblaku putem Supabasea koristi Row Level Security — svaki korisnik može pristupiti samo vlastitim podacima. Podaci u oblaku pohranjeni su na Supabase poslužiteljima u EU.</p>
 
-<h2>4. Pohrana podataka</h2>
-<p>Svi podaci primarno se čuvaju lokalno na vašem uređaju. Opcijski se mogu sinkronizirati s Supabase cloud servisom radi backupa i pristupa s više uređaja. Podaci su zaštićeni Row Level Security (RLS) pravilima — svaki korisnik može pristupiti samo svojim podacima.</p>
-
-<h2>5. Dijeljenje podataka</h2>
-<p>Swipely ne prodaje, ne iznajmljuje i ne dijeli vaše osobne podatke s trećim stranama, osim:</p>
+<h2>4. Usluge trećih strana</h2>
+<p>Swipely koristi sljedeće usluge trećih strana:</p>
 <ul>
-  <li>AI servisi (Google/Anthropic) — samo kada vi aktivno koristite AI funkcionalnosti.</li>
-  <li>Supabase — za autentifikaciju i opcijsku sinkronizaciju podataka.</li>
+<li><strong>Supabase</strong> — autentifikacija i opcionalna sinkronizacija u oblaku</li>
+<li><strong>Google Gemini API</strong> — AI generiranje kartica i objašnjenja</li>
+<li><strong>Google prijava</strong> — opcionalna prijava putem Google računa</li>
+<li><strong>RevenueCat</strong> — upravljanje pretplatama i plaćanjima</li>
+<li><strong>Google Play Billing</strong> — kupnje unutar aplikacije</li>
 </ul>
 
+<h2>5. Dijeljenje podataka</h2>
+<p>Ne prodajemo, ne iznajmljujemo i ne dijelimo vaše osobne podatke s trećim stranama. Podaci se šalju samo gore navedenim servisima za njihovu specifičnu svrhu (autentifikacija, AI obrada, plaćanja).</p>
+
 <h2>6. Dijeljenje setova kartica</h2>
-<p>Kada dijelite set kartica putem koda, sadržaj kartica postaje dostupan svakome tko ima taj kod. Ne dijelite osjetljive podatke putem ove funkcionalnosti.</p>
+<p>Kada dijelite set kartica putem koda za dijeljenje, sadržaj postaje dostupan svakome tko ima taj kod. Kodovi za dijeljenje ne sadrže osobne podatke.</p>
 
-<h2>7. Brisanje podataka</h2>
-<p>Možete obrisati sve svoje podatke odjavom iz aplikacije i brisanjem lokalnih podataka. Za brisanje cloud podataka, kontaktirajte nas na email ispod.</p>
+<h2>7. Kupnje unutar aplikacije</h2>
+<p>Swipely nudi opcionalne pretplatničke planove (Pro i Premium) kojima se upravlja putem Google Playa. Podatke o plaćanju u potpunosti obrađuje Google Play — Swipely ne prikuplja niti pohranjuje podatke o plaćanju.</p>
 
-<h2>8. Djeca</h2>
-<p>Swipely nije namijenjen djeci mlađoj od 13 godina. Ne prikupljamo svjesno podatke od djece.</p>
+<h2>8. Brisanje podataka</h2>
+<p>Možete obrisati svoj račun i sve povezane podatke kontaktirajući nas na devbynarda@gmail.com. Lokalne podatke možete obrisati deinstaliranjem aplikacije.</p>
 
-<h2>9. Promjene pravila</h2>
-<p>Zadržavamo pravo izmjene ovih pravila. Promjene stupaju na snagu objavom na ovoj stranici.</p>
+<h2>9. Privatnost djece</h2>
+<p>Swipely nije namijenjen djeci mlađoj od 13 godina. Ne prikupljamo svjesno podatke od djece mlađe od 13 godina.</p>
 
-<h2>10. Kontakt</h2>
-<p>Za pitanja o privatnosti: <strong>leonarda.hunski@gmail.com</strong></p>
+<h2>10. Promjene pravila</h2>
+<p>Ova pravila možemo povremeno ažurirati. Promjene će biti objavljene na ovoj stranici s ažuriranim datumom.</p>
+
+<h2>11. Kontakt</h2>
+<p>Za pitanja o ovim pravilima privatnosti, kontaktirajte nas na: <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a></p>
 </body>
 </html>
