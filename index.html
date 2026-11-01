@@ -1,59 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swipely Pravila privatnosti</title>
-<style>body{font-family:system-ui,sans-serif;max-width:700px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333}h1{font-size:24px}h2{font-size:18px;margin-top:28px}p{margin:8px 0}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swipely – Pravila privatnosti / Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --tx:#1a1a2e; --sub:#5b5b6e; --line:#e4e4ec; --accent:#6d28d9; --card:#f6f5fb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f0a1e; --tx:#ecebf5; --sub:#a8a6bd; --line:#2a2440; --accent:#c4b5fd; --card:#1a1430; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--tx); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { color: var(--tx); }
+  .meta { color: var(--sub); font-size: .9rem; margin-bottom: 20px; }
+  .lang { display:flex; gap:12px; margin: 8px 0 28px; }
+  .lang a { color: var(--accent); font-weight: 600; text-decoration: none; border:1px solid var(--line); padding:6px 12px; border-radius:8px; }
+  a { color: var(--accent); }
+  table { width:100%; border-collapse: collapse; margin: 8px 0 16px; font-size: .95rem; }
+  th, td { text-align:left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--sub); font-weight: 600; font-size: .85rem; }
+  .box { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  hr { border:0; border-top:1px solid var(--line); margin: 56px 0; }
+  @media (max-width: 560px) {
+    table, thead, tbody, tr, th, td { display:block; }
+    thead { display:none; }
+    tr { border-bottom:1px solid var(--line); padding: 8px 0; }
+    td { border:0; padding: 2px 0; }
+    td:first-child { font-weight:600; }
+  }
+</style>
 </head>
 <body>
-<h1>Swipely — Pravila privatnosti</h1>
-<p>Zadnje ažurirano: 5. travnja 2026.</p>
+<main>
 
-<h2>1. Koje podatke prikupljamo</h2>
-<p>Swipely prikuplja samo podatke potrebne za rad aplikacije:</p>
-<ul>
-<li>Email adresu za autentifikaciju (putem email/lozinka ili Google prijave)</li>
-<li>Podatke o karticama i mapama, pohranjene na vašem uređaju s opcionalnom sinkronizacijom u oblaku</li>
-<li>Statistiku učenja (pregledi kartica, nizovi učenja, rezultati kvizova)</li>
-<li>Status pretplate za upravljanje planovima</li>
-</ul>
+<!-- ======================= HRVATSKI ======================= -->
+<section id="hr" lang="hr">
+  <h1>Pravila privatnosti – Swipely</h1>
+  <div class="meta">Zadnje ažurirano: 1. studenoga 2026.</div>
+  <div class="lang"><a href="#hr">Hrvatski</a><a href="#en">English</a></div>
 
-<h2>2. AI obrada podataka</h2>
-<p>Prilikom korištenja AI značajki (generiranje kartica, objašnjenja, kvizovi), tekst vašeg materijala šalje se Google Gemini API-ju na obradu. Swipely ne pohranjuje te podatke nakon obrade. Google AI servisi mogu obrađivati podatke prema vlastitim pravilima privatnosti.</p>
+  <h2>1. Tko je voditelj obrade</h2>
+  <div class="box">
+    <strong>TAVIRA DIGITAL, obrt za digitalne usluge, vl. Helena Hunski</strong><br>
+    Fancevljev prilaz 1, 10000 Zagreb, Hrvatska<br>
+    OIB: 86016618486<br>
+    E-mail: <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a>
+  </div>
+  <p>Ova pravila objašnjavaju koje osobne podatke obrađujemo kada koristiš aplikaciju Swipely, zašto to radimo i koja su tvoja prava.</p>
 
-<h2>3. Pohrana podataka</h2>
-<p>Podaci se primarno pohranjuju lokalno na vašem uređaju. Opcionalna sinkronizacija u oblaku putem Supabasea koristi Row Level Security — svaki korisnik može pristupiti samo vlastitim podacima. Podaci u oblaku pohranjeni su na Supabase poslužiteljima u EU.</p>
+  <h2>2. Koje podatke obrađujemo i zašto</h2>
+  <table>
+    <thead><tr><th>Podaci</th><th>Svrha</th><th>Pravna osnova</th></tr></thead>
+    <tbody>
+      <tr><td>Podaci računa: e-mail adresa, korisnički ID, ime (ako se prijaviš putem Googlea ili Applea). Lozinku pohranjuje naš pružatelj usluge isključivo u kriptiranom (hashiranom) obliku.</td><td>Izrada računa, prijava i sinkronizacija tvojih podataka.</td><td>Izvršenje ugovora (čl. 6. st. 1. t. (b) GDPR-a)</td></tr>
+      <tr><td>Sadržaj za učenje: mape, setovi, kartice, spremljene kartice i bilješke.</td><td>Pružanje osnovne funkcije aplikacije i sinkronizacija među uređajima.</td><td>Izvršenje ugovora</td></tr>
+      <tr><td>Podaci o učenju: statistika, niz dana učenja, pauzirane sesije, postavke (npr. tema) i dnevni broj korištenja AI funkcija.</td><td>Prikaz napretka, nastavak sesija i primjena dnevnih ograničenja paketa.</td><td>Izvršenje ugovora</td></tr>
+      <tr><td>Status pretplate (koji paket imaš i do kada vrijedi).</td><td>Otključavanje plaćenih funkcija.</td><td>Izvršenje ugovora</td></tr>
+      <tr><td>Materijal koji šalješ AI funkcijama: tekst, PDF ili pitanje/odgovor s kartice.</td><td>Generiranje kartica, AI objašnjenja i kvizova.</td><td>Izvršenje ugovora</td></tr>
+      <tr><td>Setovi koje podijeliš kodom.</td><td>Omogućavanje drugima da uvezu tvoj set.</td><td>Izvršenje ugovora (na tvoj zahtjev)</td></tr>
+      <tr><td>Poruke koje nam pošalješ e-mailom.</td><td>Odgovaranje na upite i podrška.</td><td>Legitimni interes (čl. 6. st. 1. t. (f))</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Što NE radimo:</strong> ne koristimo analitiku, oglase ni praćenje, ne prodajemo podatke i ne izrađujemo profile za oglašavanje.</p>
+  <p><strong>Ostaje samo na tvom uređaju:</strong> slike koje dodaš na kartice i podsjetnici za učenje (zakazuju se lokalno na uređaju, bez slanja podataka).</p>
 
-<h2>4. Usluge trećih strana</h2>
-<p>Swipely koristi sljedeće usluge trećih strana:</p>
-<ul>
-<li><strong>Supabase</strong> — autentifikacija i opcionalna sinkronizacija u oblaku</li>
-<li><strong>Google Gemini API</strong> — AI generiranje kartica i objašnjenja</li>
-<li><strong>Google prijava</strong> — opcionalna prijava putem Google računa</li>
-<li><strong>RevenueCat</strong> — upravljanje pretplatama i plaćanjima</li>
-<li><strong>Google Play Billing</strong> — kupnje unutar aplikacije</li>
-</ul>
+  <h2>3. AI obrada</h2>
+  <p>Kada koristiš AI funkcije, materijal koji pošalješ prosljeđuje se preko našeg poslužitelja usluzi <strong>Google Gemini API</strong>. Koristimo Googleov plaćeni paket, u kojem Google <strong>ne koristi</strong> tvoj sadržaj za treniranje svojih modela. Google može taj sadržaj ograničeno vrijeme čuvati u zapisima isključivo radi otkrivanja zlouporabe, u skladu sa svojim uvjetima. Mi ne pohranjujemo materijal koji pošalješ; pohranjujemo samo kartice i objašnjenja koja iz njega nastanu, kao dio tvog sadržaja.</p>
+  <p>Molimo te da AI funkcijama ne šalješ osjetljive osobne podatke (npr. zdravstvene podatke ili tuđe osobne podatke).</p>
 
-<h2>5. Dijeljenje podataka</h2>
-<p>Ne prodajemo, ne iznajmljujemo i ne dijelimo vaše osobne podatke s trećim stranama. Podaci se šalju samo gore navedenim servisima za njihovu specifičnu svrhu (autentifikacija, AI obrada, plaćanja).</p>
+  <h2>4. Dijeljeni setovi</h2>
+  <p>Kada podijeliš set kodom, njegov sadržaj (naslov, pitanja i odgovori) pohranjuje se na našem poslužitelju kako bi ga drugi mogli uvesti. Dijeljene setove smatraj <strong>javnima</strong> — ne stavljaj u njih osobne podatke.</p>
 
-<h2>6. Dijeljenje setova kartica</h2>
-<p>Kada dijelite set kartica putem koda za dijeljenje, sadržaj postaje dostupan svakome tko ima taj kod. Kodovi za dijeljenje ne sadrže osobne podatke.</p>
+  <h2>5. Plaćanja</h2>
+  <p>Pretplate se naplaćuju putem <strong>Apple App Storea</strong> ili <strong>Google Playa</strong>. Mi nikada ne vidimo podatke o tvojoj kartici. Status pretplate upravlja se putem usluge <strong>RevenueCat</strong>, koja od Applea/Googlea dobiva potvrdu kupnje i tvoj korisnički ID.</p>
 
-<h2>7. Kupnje unutar aplikacije</h2>
-<p>Swipely nudi opcionalne pretplatničke planove (Pro i Premium) kojima se upravlja putem Google Playa. Podatke o plaćanju u potpunosti obrađuje Google Play — Swipely ne prikuplja niti pohranjuje podatke o plaćanju.</p>
+  <h2>6. Primatelji i izvršitelji obrade</h2>
+  <ul>
+    <li><strong>Supabase</strong> – baza podataka, prijava i poslužiteljske funkcije. Podaci se pohranjuju u EU (Irska).</li>
+    <li><strong>Google</strong> – Gemini API (AI funkcije) i prijava putem Googlea (ako je koristiš).</li>
+    <li><strong>Apple</strong> – prijava putem Applea (ako je koristiš) i naplata pretplata u App Storeu.</li>
+    <li><strong>Google Play</strong> – naplata pretplata na Androidu.</li>
+    <li><strong>RevenueCat</strong> – upravljanje statusom pretplate.</li>
+  </ul>
 
-<h2>8. Brisanje podataka</h2>
-<p>Možete obrisati svoj račun i sve povezane podatke kontaktirajući nas na devbynarda@gmail.com. Lokalne podatke možete obrisati deinstaliranjem aplikacije.</p>
+  <h2>7. Prijenos podataka izvan EU</h2>
+  <p>Google, Apple i RevenueCat mogu obrađivati podatke u SAD-u ili drugim državama izvan EU. Takvi prijenosi temelje se na odluci Europske komisije o primjerenosti za Okvir za privatnost podataka EU–SAD i/ili na standardnim ugovornim klauzulama Europske komisije, kako ih osiguravaju ti pružatelji usluga.</p>
 
-<h2>9. Privatnost djece</h2>
-<p>Swipely nije namijenjen djeci mlađoj od 13 godina. Ne prikupljamo svjesno podatke od djece mlađe od 13 godina.</p>
+  <h2>8. Koliko dugo čuvamo podatke</h2>
+  <ul>
+    <li>Podatke računa, sadržaj, podatke o učenju i dijeljene setove čuvamo dok imaš račun.</li>
+    <li>Kada obrišeš račun, ti se podaci odmah brišu iz naše baze. Mogu kratko ostati u sigurnosnim kopijama našeg pružatelja usluge dok se te kopije ne prepišu.</li>
+    <li>Zapise o kupnjama Apple, Google i RevenueCat čuvaju prema svojim pravilima i zakonskim obvezama (npr. poreznim).</li>
+    <li>E-mail poruke čuvamo dok je potrebno za rješavanje upita.</li>
+  </ul>
 
-<h2>10. Promjene pravila</h2>
-<p>Ova pravila možemo povremeno ažurirati. Promjene će biti objavljene na ovoj stranici s ažuriranim datumom.</p>
+  <h2>9. Tvoja prava</h2>
+  <p>Imaš pravo na pristup svojim podacima, ispravak, brisanje, ograničenje obrade, prenosivost podataka i prigovor na obradu koja se temelji na legitimnom interesu.</p>
+  <ul>
+    <li><strong>Brisanje računa:</strong> u aplikaciji otvori <em>Postavke → Obriši račun</em>, ili nam piši na <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a>. Brisanje računa <strong>ne otkazuje</strong> pretplatu — nju otkaži u postavkama App Storea ili Google Playa.</li>
+    <li>Za ostala prava piši nam na isti e-mail. Odgovorit ćemo u roku od mjesec dana.</li>
+    <li>Imaš pravo podnijeti pritužbu nadzornom tijelu: <strong>Agencija za zaštitu osobnih podataka (AZOP)</strong>, Selska cesta 136, 10000 Zagreb, <a href="https://azop.hr">azop.hr</a>.</li>
+  </ul>
 
-<h2>11. Kontakt</h2>
-<p>Za pitanja o ovim pravilima privatnosti, kontaktirajte nas na: <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a></p>
+  <h2>10. Sigurnost</h2>
+  <p>Svi podaci putuju šifriranom vezom (HTTPS). Pravila pristupa u bazi podataka osiguravaju da svaki korisnik može čitati i mijenjati samo vlastite podatke.</p>
+
+  <h2>11. Djeca</h2>
+  <p>Swipely nije namijenjen djeci mlađoj od 13 godina i svjesno ne prikupljamo njihove podatke. Ako smatraš da nam je dijete dalo osobne podatke, javi nam se i obrisat ćemo ih.</p>
+
+  <h2>12. Izmjene</h2>
+  <p>Ova pravila možemo povremeno ažurirati. Datum na vrhu pokazuje zadnju izmjenu. O važnim promjenama obavijestit ćemo te u aplikaciji.</p>
+</section>
+
+<hr>
+
+<!-- ======================= ENGLISH ======================= -->
+<section id="en" lang="en">
+  <h1>Privacy Policy – Swipely</h1>
+  <div class="meta">Last updated: 1 November 2026</div>
+  <div class="lang"><a href="#hr">Hrvatski</a><a href="#en">English</a></div>
+
+  <h2>1. Who is responsible for your data</h2>
+  <div class="box">
+    <strong>TAVIRA DIGITAL, obrt za digitalne usluge, vl. Helena Hunski</strong><br>
+    Fancevljev prilaz 1, 10000 Zagreb, Croatia<br>
+    OIB (tax ID): 86016618486<br>
+    Email: <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a>
+  </div>
+  <p>This policy explains what personal data we process when you use the Swipely app, why we do it, and what your rights are.</p>
+
+  <h2>2. What data we process and why</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis</th></tr></thead>
+    <tbody>
+      <tr><td>Account data: email address, user ID, name (if you sign in with Google or Apple). Your password is stored by our provider only in encrypted (hashed) form.</td><td>Creating your account, signing in and syncing your data.</td><td>Performance of a contract (Art. 6(1)(b) GDPR)</td></tr>
+      <tr><td>Learning content: folders, decks, cards, saved cards and notes.</td><td>Providing the app's core features and syncing between devices.</td><td>Performance of a contract</td></tr>
+      <tr><td>Study data: statistics, study streaks, paused sessions, settings (e.g. theme) and your daily AI usage count.</td><td>Showing your progress, resuming sessions and applying your plan's daily limits.</td><td>Performance of a contract</td></tr>
+      <tr><td>Subscription status (which plan you have and until when).</td><td>Unlocking paid features.</td><td>Performance of a contract</td></tr>
+      <tr><td>Material you send to AI features: text, PDFs, or a card's question/answer.</td><td>Generating cards, AI explanations and quizzes.</td><td>Performance of a contract</td></tr>
+      <tr><td>Decks you share with a code.</td><td>Letting others import your deck.</td><td>Performance of a contract (at your request)</td></tr>
+      <tr><td>Emails you send us.</td><td>Answering questions and providing support.</td><td>Legitimate interest (Art. 6(1)(f))</td></tr>
+    </tbody>
+  </table>
+  <p><strong>What we do NOT do:</strong> no analytics, no ads, no tracking, no selling of data, and no advertising profiles.</p>
+  <p><strong>Stays only on your device:</strong> images you add to cards, and study reminders (scheduled locally on your device; no data is sent).</p>
+
+  <h2>3. AI processing</h2>
+  <p>When you use AI features, the material you submit is forwarded through our server to the <strong>Google Gemini API</strong>. We use Google's paid tier, under which Google does <strong>not</strong> use your content to train its models. Google may keep it in logs for a limited period solely to detect abuse, under its own terms. We do not store the material you submit; we only store the cards and explanations generated from it, as part of your content.</p>
+  <p>Please don't send sensitive personal data (for example health information or other people's personal data) to the AI features.</p>
+
+  <h2>4. Shared decks</h2>
+  <p>When you share a deck with a code, its content (title, questions and answers) is stored on our server so others can import it. Treat shared decks as <strong>public</strong> — don't put personal data in them.</p>
+
+  <h2>5. Payments</h2>
+  <p>Subscriptions are billed through the <strong>Apple App Store</strong> or <strong>Google Play</strong>. We never see your card details. Subscription status is managed by <strong>RevenueCat</strong>, which receives purchase confirmations from Apple/Google together with your user ID.</p>
+
+  <h2>6. Recipients and processors</h2>
+  <ul>
+    <li><strong>Supabase</strong> – database, sign-in and server functions. Data is stored in the EU (Ireland).</li>
+    <li><strong>Google</strong> – Gemini API (AI features) and Sign in with Google (if you use it).</li>
+    <li><strong>Apple</strong> – Sign in with Apple (if you use it) and App Store subscription billing.</li>
+    <li><strong>Google Play</strong> – subscription billing on Android.</li>
+    <li><strong>RevenueCat</strong> – subscription status management.</li>
+  </ul>
+
+  <h2>7. Transfers outside the EU</h2>
+  <p>Google, Apple and RevenueCat may process data in the United States or other countries outside the EU. These transfers rely on the European Commission's adequacy decision for the EU–US Data Privacy Framework and/or the European Commission's Standard Contractual Clauses, as provided by these providers.</p>
+
+  <h2>8. How long we keep data</h2>
+  <ul>
+    <li>We keep account data, content, study data and shared decks for as long as you have an account.</li>
+    <li>When you delete your account, this data is deleted from our database immediately. It may remain briefly in our provider's backups until those are overwritten.</li>
+    <li>Apple, Google and RevenueCat keep purchase records according to their own policies and legal obligations (e.g. tax law).</li>
+    <li>We keep emails for as long as needed to resolve your request.</li>
+  </ul>
+
+  <h2>9. Your rights</h2>
+  <p>You have the right to access your data, correct it, delete it, restrict its processing, receive it in a portable format, and object to processing based on legitimate interest.</p>
+  <ul>
+    <li><strong>Deleting your account:</strong> in the app, go to <em>Settings → Delete account</em>, or email <a href="mailto:devbynarda@gmail.com">devbynarda@gmail.com</a>. Deleting your account does <strong>not</strong> cancel a subscription — cancel it in your App Store or Google Play settings.</li>
+    <li>For any other right, email us at the same address. We'll reply within one month.</li>
+    <li>You can lodge a complaint with the supervisory authority: <strong>Croatian Personal Data Protection Agency (AZOP)</strong>, Selska cesta 136, 10000 Zagreb, <a href="https://azop.hr">azop.hr</a>, or with the authority in your own EU country.</li>
+  </ul>
+
+  <h2>10. Security</h2>
+  <p>All data travels over an encrypted connection (HTTPS). Access rules in our database ensure each user can only read and change their own data.</p>
+
+  <h2>11. Children</h2>
+  <p>Swipely is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has given us personal data, contact us and we will delete it.</p>
+
+  <h2>12. Changes</h2>
+  <p>We may update this policy from time to time. The date at the top shows the latest change. We'll let you know about important changes in the app.</p>
+</section>
+
+</main>
 </body>
 </html>
